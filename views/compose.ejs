@@ -1,0 +1,24 @@
+<%- include("components/header"); -%>
+  <form action="/compose" method="post">
+
+    <div class="form-floating my-3">
+      <input type="text" name="title" id="title" class="form-control" placeholder="title">
+      <label for="title" class="form-label">News Title</label>
+    </div>
+
+    <div class="form-floating my-3">
+      <textarea class="form-control" id="content" name="content" placeholder="content" id="content" cols="30"
+        rows="10"></textarea>
+      <label for="content" class="form-label">Content</label>
+    </div>
+
+    <div class="form-floating my-3">
+      <input type="text" placeholder="author" name="author" id="author" class="form-control">
+      <label for="author" class="form-label">Author</label>
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+  <%- include("components/footer"); -%>

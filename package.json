@@ -1,0 +1,20 @@
+{
+  "name": "cs50-news",
+  "version": "1.0.0",
+  "description": "This pj is the final project of CS50 intro to CS.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Kaung Pyae Min Thein",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "mongoose": "^6.5.1"
+  },
+  "engines": {
+    "node": "16.x"
+  }
+}

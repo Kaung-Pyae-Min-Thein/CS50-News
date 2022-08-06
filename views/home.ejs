@@ -1,0 +1,25 @@
+<%- include('components/header'); -%>
+
+  <% news.forEach( (singleNews)=> { %>
+
+    <div class="item bg-light my-5">
+
+      <h1 class="text-danger h3">
+        <%= singleNews.title %>
+      </h1>
+
+      <h2 class="text-muted fs-5">
+        <a class="link-secondary text-decoration-none" href="/author/<%=singleNews.author %>">
+          #<%= singleNews.author %>
+        </a>
+      </h2>
+
+      <p class="fs-5">
+        <%= singleNews.content.substring(0,100)+".........." %>
+      </p>
+
+      <a class="link-danger text-decoration-none" href="/post/<%= singleNews._id %>">Read More</a>
+
+    </div>
+    <% }); %>
+      <%- include('components/footer'); -%>
